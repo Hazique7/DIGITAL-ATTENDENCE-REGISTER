@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <script src="./attendencePage2.js"></script>
+    <script src="./attenedencePage3.js"></script>
+<head>
+<style>
+table {
+margin-top: 80px;
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.submit{
+    
+    margin-left: 650px;
+    margin-top: 60px;
+    background-color: #dddddd;
+}
+.btn{
+  display: inline;
+  margin-top: 30px;
+  margin-left: 550px;
+}
+.btnU{
+  display: inline;
+  margin-top: 30px;
+  margin-left: 550px;
+}
+</style>
+</head>
+<body style="background-color: beige" id="b">
+
+<h2 style="text-align: center;">TEACHERS ATTENDENCE FORM</h2>
+
+<table style="display: table;" id="table">
+  <tr>
+    <th>Subject</th>
+    <th>TEACHERS</th>
+    <th>Absent / Present</th>
+  </tr>
+  <tr>
+    <td>MATHEMATICS</td>
+    <td>SIR FAISAL</td>
+    <td><input type="checkbox" id="maths" class="checkbox"></td>
+  </tr>
+  <tr>
+    <td>PHYSICS</td>
+    <td>SIR ASIF BASHIR</td>
+    <td><input type="checkbox" id="phy" class="checkbox"></td>
+  </tr>
+  <tr>
+    <td>ENGLISH</td>
+    <td>SIR MUMTAZ</td>
+    <td><input type="checkbox" id="eng" class="checkbox"></td>
+  </tr>
+  <tr>
+    <td>URDU</td>
+    <td>SIR AZHAR</td>
+    <td><input type="checkbox" id="urdu" class="checkbox"></td>
+  </tr>
+  <tr>
+    <td>COMPUTER SCIENCES</td>
+    <td>SIR IMRAN</td>
+    <td><input type="checkbox" id="cs" class="checkbox"></td>
+  </tr>
+ 
+</table>
+<button style="display: block;" onclick="countAttendence()" id="btn" class="btn">submit</button>
+<button style="display: block;" onclick="updateDATA()" id="btnU" class="btnU">UPDATE</button>
+<!-- <button onclick="attenedencePage3()">show register  </button> -->
+
+
+<table style="display: none;" border="1" id="myTable">
+  <TR> 
+      <th colspan="4" style="text-align: center;">
+       TOTAL ATTENDENCE
+   </th>
+</TR>
+<tr>
+<th>SUBJECT</th>
+<th>TEACHERS</th>
+<th>PRESENTS</th>
+<th>LEAVES</th>
+</tr>
+<TR>
+<td>SIR FAISAL</td>
+<td>MATHEMATICS</td>
+<td><h5 id="mP">0</h5></td>
+<td><h5 id="mA">0</h5></td>
+</TR>
+<TR>
+<td>SIR ASIF BASHIR</td>
+<td>PHYSICS</td>
+<td><h5 id="pP">0</h5></td>
+<td><h5 id="pA">0</h5></td>
+</TR>
+<TR>
+<td>SIR MUMTAZ</td>
+<td>ENGLIHS LITRATURE</td>
+<td><h5 id="eP">0</h5></td>
+<td><h5 id="eA">0</h5></td>
+</TR>
+<TR>
+<td>SIR AZHAR</td>
+<td>URDU</td>
+<td><h5 id="uP">0</h5></td>
+<td><h5 id="uA">0</h5></td>
+
+</TR>
+<TR>
+<td>SIR IMRAN</td>
+<td>COMPUTER SCIENCES</td>
+<td><h5 id="cP">0</h5></td>
+<td><h5 id="cA">0</h5></td>
+</TR>
+</table>
+</body>
+</html>
+
