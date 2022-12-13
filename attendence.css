@@ -1,0 +1,31 @@
+.login{
+    text-align: center;
+    height: 400px;
+    width: 400px;
+    background-color:rgb(210 36 36 / 40%);
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    margin-top: 130px;
+    margin-left: 450px;
+}
+.form{
+    position: relative;
+    margin-top: 120px;
+    display: inline-block;
+}
+.h3{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.pass{
+    text-align: center;
+}
+.button{
+    margin-top: 12px;
+    background-color: aliceblue;
+}
